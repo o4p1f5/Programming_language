@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// C언어의 캐스팅
+// C언어의 캐스팅 - 무조건 작동하진 않기때문에 위험성이 있다
 /*
 int main()
 {
@@ -22,7 +22,7 @@ int main()
 }
 */
 
-// C++ 4가지의 캐스팅
+// C++ 4가지의 캐스팅 - c언어의 문제점 보완
 // 1) static_cast : 가장 기본적인 연산자 : 컴파일 과정에서 캐스팅 수행 : 위험한 캐스팅은 걸러줌
 /*
 int main()

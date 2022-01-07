@@ -39,6 +39,6 @@ int main()
     int x[5];
     prinnf("main : sizeof(%1d)\n",sizeof(x));
 
-    foo(x);
-    foo2(x);
+    foo(x); // 배열의 첫 원소 주소 전달
+    foo2(x); // 참조는 첫 원소의 주소를 전달하는 것이 아닌 별칭을 만들어주는것
 }
