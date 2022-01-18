@@ -136,4 +136,3 @@ for score in scores :
 avg = sum / len(scores)
 print('합계 : %d, 평균 : %.2f' %(sum, avg)) 
 """
-# 다시 확인
