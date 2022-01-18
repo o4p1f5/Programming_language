@@ -120,6 +120,7 @@ while count <= 300 :
 # 연습문제 5-1
 """
 
+""" 
 # 연습문제 5-2
 scores = []
 while True :
@@ -133,4 +134,5 @@ for score in scores :
     sum = sum + score
 
 avg = sum / len(scores)
-print('합계 : %d, 평균 : %.2f' %(sum, avg))
+print('합계 : %d, 평균 : %.2f' %(sum, avg)) 
+"""
