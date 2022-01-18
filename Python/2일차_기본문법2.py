@@ -117,7 +117,40 @@ while count <= 300 :
 '''
 
 """ 
+# 연습문제 4-4
+# while문 화폐 통화 환산 표
+from tkinter import W
+
+
+print('-' * 50)
+print('%7s \t %7s \t %7s' %('달러($)','원화(원)','유로'))
+print('-' * 50)
+
+dollar = 10
+
+while dollar <= 100 : 
+    won = dollar * 1080
+    euro = dollar * 0.81
+
+    print('%7d \t %8.0f \t %7.1f'%(dollar,won,euro))
+
+    dollar = dollar + 10
+print('-'*50) 
+"""
+
+""" 
 # 연습문제 5-1
+questions = ['tr_in','b_s','_axi','air_lane']
+answers = ['a','u','t','p']
+
+for i in range(len(questions)) :
+    q = '%s 에서 밑줄(_) 안에 들어갈 알파벳?' %questions[i]
+    ans = input(q)
+
+    if ans == answers[i] :
+        print('정답입니다!')
+    else :
+        print('틀렸습니다!') 
 """
 
 """ 
@@ -136,3 +169,70 @@ for score in scores :
 avg = sum / len(scores)
 print('합계 : %d, 평균 : %.2f' %(sum, avg)) 
 """
+
+""" 
+# 연습문제 6-1
+# 튜플로 구구단표 만들기
+dans = (2,3,4,5,6,7,8,9)
+print('구구단표')
+print('='*50)
+
+for dan in dans :
+    print(str(dan) + '단')
+
+    for i in range(1,10) :
+        print('%d X %d = %d' % (dan,i,dan * i))
+    print('-'*30) 
+"""
+
+"""
+ # 연습문제 6-2
+# 튜플로 관리자 정보 관리
+admin = ('rubato','12345','rubato@naver.com')
+
+print('- 관리자 정보')
+print('아이디 : ' + admin[0])
+print('비밀번호 : ' + admin[1])
+print('이메일 : ' + admin[2]) 
+"""
+
+""" 
+# 연습문제 6-3
+# 딕셔너리 성적 합계 / 평균
+scores = {'김채린' : 85, '박수정' : 98, '함소희' : 94, '안예린' : 90, '연수진' : 93}
+sum = 0
+for key in scores :
+    sum = sum + scores[key]
+    print('%s : %d' %(key,scores[key]))
+avg = sum / len(scores)
+print('합계 : %d, 평균 : %.2f' %(sum,avg)) 
+"""
+
+""" 
+# 연습문제 7-1
+# 매개변수 이용한 정수 합계
+def sum(start, end) :
+    hap = 0
+    for i in range(start, end +1) :
+        hap = hap + i
+    print('%d ~ %d의 정수의 합계 : %d' % (start, end, hap))
+
+sum (1,10)
+sum (100,200)
+sum (200,300) 
+"""
+
+# 연습문제 7-2
+# 반환 값 이용한 3의 배수 합계
+def sum_besu3(n) :
+    sum = 0
+    for i in range(1,n+1) :
+        if i % 3 == 0 :
+            sum = sum + i
+    
+    return sum # 반환값
+
+num = int(input('양의 정수를 입력하세요 : '))
+result = sum_besu3(num)
+
+print('1 ~ %d까지의 정수 중 3의 배수의 합 : %d' %(num,result))
