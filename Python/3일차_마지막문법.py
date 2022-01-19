@@ -387,7 +387,6 @@ else :
     print('허근이다.') 
 """
 
-""" 
 # 이차방정식을 푸는 프로그램 답
 import sys
 import math
@@ -420,4 +419,3 @@ elif D < 0 : # 허근
 else :
     print("잘못 입력했습니다.")
     pass 
-"""
