@@ -386,3 +386,38 @@ elif y**2 - 4*x*z > 0 :
 else :
     print('허근이다.') 
 """
+
+""" 
+# 이차방정식을 푸는 프로그램 답
+import sys
+import math
+
+print('ax2 + bx + c = 0')
+
+a = int(input('a값을 입력 '))
+b = int(input('b값을 입력 '))
+c = int(input('c값을 입력 '))
+
+if a == 0 :
+    print('a=0: 이차방정식이 아닙니다.')
+    sys.exit() # 이차방정식이 아니면 프로그램 실행이 멈추는 매소드
+    pass
+
+D = b**2 - 4*a*c
+
+if D > 0 : # 실근
+    x1 = (-b + math.sqrt(D)) / (2*a)
+    x2 = (-b - math.sqrt(D)) / (2*a)
+    print(f"2개의 해 : x1 = {x1}, x2 = {x2}")
+    pass
+elif D == 0 : # 중근
+    x = -b / (2*a)
+    print(f"개의 해 : x = {x}")
+    pass
+elif D < 0 : # 허근
+    print("해가 없습니다.")
+    pass
+else :
+    print("잘못 입력했습니다.")
+    pass 
+"""
