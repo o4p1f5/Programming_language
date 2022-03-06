@@ -2,7 +2,7 @@
 
 #define F_CPU 16000000L
 #include <avr/io.h>
-#include <avr/delay.h>
+#include <util/delay.h>
 
 char circular_shift_right(char pattern)
 {
