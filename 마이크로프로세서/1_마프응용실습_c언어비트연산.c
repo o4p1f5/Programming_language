@@ -126,6 +126,7 @@ printf( " %3d : = 0x%02x = 0b%s\n", num, num, binary);
 return 0;
 }
 
+/* switch - case - defult */
 /*
 비트 쓰는 방식
 0bXXXXXXXX
