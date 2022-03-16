@@ -5,6 +5,10 @@
 #include <avr/delay.h>
 */
 
+// xxx.h // 헤더 // 함수 선언
+// xxx.c // #include "xxx.h" // 함수 정의
+// main문에서 // 함수 호출
+
 /*
 c언어라서
 초기화 -> 데이터처리 순으로 작성
